@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Elaine Bastos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="./js/script.js" async></script>
+    <link rel="stylesheet" href="./styles/stylesopcao.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body data-bs-theme="light">
+    <header class="fixed-top p-2">
+        <nav class="navbar">
+            <div class="container-fluid dropdown mx-5 px-5">
+                <button class="navbar-toggler" type="button" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span class="navbar-toggler-icon">
+                        <ul class="dropdown-menu bg-lilas">
+                            <li><a class="dropdown-item" href="projetos" >Projetos</a></li>
+                            <li><a class="dropdown-item" href="#habilidades" >Habilidades</a></li>
+                            <li><a class="dropdown-item" href="#sobreMim" >Sobre mim</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Minhas redes</a></li>
+                        </ul>
+                    </span>
+                </button>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">
+                        <span class="position-relative">
+                            <i class="bi bi-moon"></i>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="d-flex row justify-content-center mt-5">
+        <section id="apresentacao" class="d-flex row justify-content-center mx-5 py-5 bg-img">
+            <div
+                class="col-md-6 d-flex flex-column justify-content-center align-items-center align-self-center text-center">
+                <h2 class="fs-2 mt-5">Conquiste mais clientes e <strong class="fs-2 strong">aumente seus
+                        negócios</strong> com um <strong class="fs-2 strong">site profissional</strong> para seus
+                    objetivos.</h2>
+                <h5 class="fs-5 subtitle">Ajudo pessoas e empresas a alavancar seus negócios na internet através de um
+                    website otimizado e moderno, que impulsionará a visão de sua marca no mercado.</h5>
+                <a href="#" class="d-inline-flex focus-ring py-1 px-5 m-2 text-decoration-none border rounded-5 btn"
+                    style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
+                    Entre em contato
+                </a>
+            </div>
+        </section>
+
+        <section id="projetos" class="d-flex row justify-content-center m-5">
+            <div class="container-fluid my-5 d-flex justify-content-center ">
+                <h2 class="title fs-2">Conheça alguns de meus Projetos</h2>
+            </div>
+            <div class="w-60 d-flex justify-content-center">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner w-70">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="./assets/Pomodoro.png" class="d-block w-70" alt="Imagem do projeto Pomodoro">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="title strong bg-lilas  rounded-5 w-70 px-4 d-inline-flex ">Projeto
+                                    Pomodoro</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./assets/alurabooks.png" class="d-block w-70" alt="Imagem do projeto alurabooks">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="title strong bg-lilas rounded-5 w-70 px-4 d-inline-flex ">Projeto
+                                    Alura Books </h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./assets/calmaria.png" class="d-block w-70" alt="Imagem do projeto Calmaria Spa">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="title strong  bg-lilas rounded-5 w-70 px-4 d-inline-flex ">Projeto
+                                    Calmaria Spa</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="habilidades" class="d-flex row justify-content-center my-5 m-3 ">
+            <hr>
+            <h2 class="title d-flex justify-content-center fs-2 m-5">Habilidades</h2>
+            <div class="row">
+
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/filetype-html.svg" class="card-img w-25" alt="icone de HTML-5">
+                    <div class="card-img">
+                        <h5 class="card-text">HTML-5</h5>
+                    </div>
+                </div>
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/filetype-css.svg" class="card-img w-25" alt="icone de CSS">
+                    <div class="card-img">
+                        <h5 class="card-text">CSS</h5>
+                    </div>
+                </div>
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/filetype-js.svg" class="card-img w-25" alt="icone de JavaScript">
+                    <div class="card-img">
+                        <h5 class="card-text">JavaScript</h5>
+                    </div>
+                </div>
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/filetype-json.svg" class="card-img w-25" alt="icone de JSON">
+                    <div class="card-img">
+                        <h5 class="card-text">JSON</h5>
+                    </div>
+                </div>
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/bootstrap.svg" class="card-img w-25" alt="icone de boostrap">
+                    <div class="card-img">
+                        <h5 class="card-text">Bootstrap</h5>
+                    </div>
+                </div>
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/wordpress.svg" class="card-img w-25" alt="icone do wordpress">
+                    <div class="card-img">
+                        <h5 class="card-text">Wordpress</h5>
+                    </div>
+                </div>
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/filetype-jsx.svg" class="card-img w-25" alt="icone do React">
+                    <div class="card-img">
+                        <h5 class="card-text">React</h5>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+
+        <section id="sobreMim" class="d-flex row  justify-content-center m-5 p-5">
+
+            <h2 class="card-title m-5 d-flex justify-content-center align-items-center m-3">Sobre mim</h2>
+            <div id="conteudo"
+                class="d-flex">
+                <div class="col-md-6 col-sm-12 w-50 d-flex flex-column justify-content-center align-self-center text-center align-items-center">
+                <div class="card-body col-md-9 d-flex flex-column justify-content-center">
+
+                    <p
+                        class="card-text w-100 d-flex justify-content-evenly align-items-center align-self-center text-center">
+                        Meu nome é Elaine Bastos e no ultimo ano, tenho me dedicado ao
+                        aprimoramento dos meus conhecimentos com Desenvolvimento Web. </p>
+                    <p
+                        class="card-text w-100 d-flex justify-content-evenly align-items-center align-self-center text-center">
+                        Busco me manter atualizada com as últimas tendências e boas práticas do mercado,
+                        investindo tempo em aprendizado contínuo.</p>
+                    <p
+                        class="card-text w-100 d-flex justify-content-evenly align-items-center align-self-center text-center">
+                        Tenho como objetivo porporcionar uma experiência inclusiva, impactante, atraente, e eficiente
+                        aos
+                        usuários.</p>
+                    <p
+                        class="card-text w-100 d-flex justify-content-evenly align-items-center align-self-center text-center">
+                        Confira meu repositório ou entre em contato:</p>
+                    <div class="d-flex flex-column justify-content-center align-items-center m-3">
+                        <a href="https://github.com/elaine-nbastos"
+                            class="text-decoration-none border rounded-5 btn w-50 py-1 m-2"
+                            style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
+                            <img src="./assets/github.svg" alt="icone do github">
+                        </a>
+                        <a href="mailto:elaineb80@hotmail.com"
+                            class="text-decoration-none border rounded-5 btn w-50 py-1 m-2"
+                            style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
+                            <img src="./assets/envelope.svg" alt="icone de email">
+                        </a>
+                        <a href="https://wa.link/ishpu9" class="text-decoration-none border rounded-5 btn w-50 py-1 m-2"
+                            style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
+                            <img src="./assets/whatsapp.svg" alt="icone do whatsapp">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="col-md-6 col-sm-12 p-md-4 w-50 d-flex justify-content-center align-items-center align-self-center text-center">
+                <img class="img-fluid object-fit-md-contain w-50 rounded-pill shadow-lg mx-5"
+                    src="./assets/avatar-Elaine.png"
+                    alt="Imagem de Elaine Bastos">
+            </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
