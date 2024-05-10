@@ -28,12 +28,12 @@
 
     /*DARK MODE*/
 
-    --cor-planoDeFundo-dark: linear-gradient(to bottom,#212529, #989090);
+    --cor-planoDeFundo-dark: linear-gradient(to bottom, #212529, #989090);
 
     --cor-fonte-primaria-dark: #9c9c9c;
 }
 
-body{
+body {
     font-family: var(--fonte-secundaria);
 }
 
@@ -41,7 +41,9 @@ body{
     color: var(--cor-quaternaria);
 }
 
-#projetos, #habilidades, #sobreMim{
+#projetos,
+#habilidades,
+#sobreMim {
     visibility: hidden;
 }
 
@@ -50,8 +52,7 @@ body{
     color: white;
 }
 
-#avatar-Elaine{
-
+#avatar-Elaine {
     background-color: var(--cor-secundaria) !important;
     border-radius: 200px 100px 100px 150px;
 }
@@ -59,27 +60,27 @@ body{
 
 [data-bs-theme="light"] {
 
-    header{
+    header {
         background-image: linear-gradient(40deg, var(--cor-terciaria), var(--cor-primaria));
     }
 
-    .form-check-input{
+    .form-check-input {
         background-color: var(--cor-fonte-secundaria);
         border-color: var(--cor-quinternaria);
     }
 
-    #apresentacao{
+    #apresentacao {
         position: relative;
         height: 100%;
         overflow: hidden;
     }
 
-    #texto{
+    #texto {
         position: relative;
         z-index: 1;
     }
 
-    .imgFundo{
+    .imgFundo {
         position: absolute;
         left: 0;
         top: 0;
@@ -87,14 +88,14 @@ body{
         height: 100%;
         opacity: 0.5;
     }
-   
+
     .form-check-input:checked {
         background-color: #de639a;
         border-color: #de639a;
     }
 
-    #projetos{
-        background-image: linear-gradient(40deg, var(--cor-terciaria), var(--cor-primaria)); 
+    #projetos {
+        background-image: linear-gradient(40deg, var(--cor-terciaria), var(--cor-primaria));
         color: var(--cor-fonte-secundaria);
     }
 
@@ -110,7 +111,7 @@ body{
         background-color: var(--cor-quaternaria);
     }
 
-    .navbar-toggler-icon{
+    .navbar-toggler-icon {
         --bs-navbar-hover-color: var(--cor-fonte-secundaria);
     }
 
@@ -118,10 +119,10 @@ body{
         color: var(--cor-secundaria) !important;
     }
 
-    #habilidades{
+    #habilidades {
         font-family: var(--fonte-primaria);
         color: var(--cor-quaternaria);
-        font-weight:800;
+        font-weight: 800;
     }
 
     .btn {
@@ -129,9 +130,6 @@ body{
         --bs-btn-border-color: var(--cor-primaria);
         --bs-btn-hover-bg: var(--cor-terciaria);
         color: var(--cor-fonte-secundaria);
-        text-decoration: none;
-        text-transform: none;
-
         --bs-btn-hover-border-color: var(--cor-terciaria);
         --bs-btn-active-bg: var(--cor-secundaria);
         --bs-btn-active-border-color: var(--cor-primaria);
@@ -142,14 +140,19 @@ body{
 
     .btn:hover {
         color: var(--cor-fonte-primaria);
-
         transform: scale(1.2);
         transition: .5s;
     }
 
+    #projetos .btn:hover {
+        color: var(--cor-fonte-primaria);
+        opacity: 0.9;
+        transform: scale(2);
+        transition: .5s;
+    }
 
     .dropdown-item {
-        --bs-dropdown-link-color:var(--cor-fonte-secundaria);
+        --bs-dropdown-link-color: var(--cor-fonte-secundaria);
     }
 
     .dropdown-divider {
@@ -160,28 +163,27 @@ body{
         --bs-border-color: var(--cor-terciaria);
     }
 
-    hr{
+    hr {
         border-bottom: 1px solid var(--cor-primaria);
         box-sizing: border-box;
         width: 100%;
-    
     }
 }
 
 [data-bs-theme="dark"] {
 
-    #apresentacao{
+    #apresentacao {
         position: relative;
         height: 100%;
         overflow: hidden;
     }
 
-    #texto{
+    #texto {
         position: relative;
         z-index: 1;
     }
 
-    .imgFundo{
+    .imgFundo {
         position: absolute;
         left: 0;
         top: 0;
@@ -189,7 +191,7 @@ body{
         height: 100%;
         opacity: 0.2;
     }
-   
+
 
     .btn {
         --bs-btn-bg: var(--cor-terciaria);
@@ -208,11 +210,11 @@ body{
         color: #a7a7a7;
     }
 
-    header{
+    header {
         background-color: #2a2828;
     }
-    
-    hr{
+
+    hr {
         border-bottom: 2px solid #b1087e;
         box-sizing: border-box;
         width: 100%;
@@ -230,7 +232,7 @@ body{
 
 @media (max-width: 780px) {
 
-    #sobreMim #conteudo{
+    #sobreMim #conteudo {
         flex-direction: column-reverse;
     }
 }
