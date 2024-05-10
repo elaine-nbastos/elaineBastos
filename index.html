@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Elaine Bastos</title>
+    <title>Elaine Bastos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="./js/script.js" async></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./styles/stylesopcao.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -20,8 +21,8 @@
                 <button class="navbar-toggler" type="button" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <span class="navbar-toggler-icon">
-                        <ul class="dropdown-menu bg-lilas">
-                            <li><a class="dropdown-item" href="projetos" >Projetos</a></li>
+                        <ul class="dropdown-menu bg-secundario">
+                            <li><a  href="#projetos" class="dropdown-item">Projetos</a></li>
                             <li><a class="dropdown-item" href="#habilidades" >Habilidades</a></li>
                             <li><a class="dropdown-item" href="#sobreMim" >Sobre mim</a></li>
                             <li>
@@ -43,71 +44,59 @@
         </nav>
     </header>
     <main class="d-flex row justify-content-center mt-5">
-        <section id="apresentacao" class="d-flex row justify-content-center mx-5 py-5 bg-img">
-            <div
-                class="col-md-6 d-flex flex-column justify-content-center align-items-center align-self-center text-center">
-                <h2 class="fs-2 mt-5">Conquiste mais clientes e <strong class="fs-2 strong">aumente seus
+        <section id="apresentacao" class="d-flex row justify-content-center mx-5 py-5" style="width: 100%; height: 600px;">
+            <img src="./assets/maos-codando.jpeg" class="imgFundo">
+            <div id="texto"
+                class="col-md-6 d-flex flex-column justify-content-center align-items-center align-self-center text-center" style="z-index: 2;">
+                <h2 class="fs-2 mt-5">Conquiste mais clientes e <strong class="fs-1 strong">aumente seus
                         negócios</strong> com um <strong class="fs-2 strong">site profissional</strong> para seus
                     objetivos.</h2>
-                <h5 class="fs-5 subtitle">Ajudo pessoas e empresas a alavancar seus negócios na internet através de um
+                <h5 class="fs-5">Ajudo pessoas e empresas a alavancar seus negócios na internet através de um
                     website otimizado e moderno, que impulsionará a visão de sua marca no mercado.</h5>
-                <a href="#" class="d-inline-flex focus-ring py-1 px-5 m-2 text-decoration-none border rounded-5 btn"
+                <a href="#" class="d-inline-flex focus-ring py-2 px-5 m-2 text-decoration-none border rounded-5 btn"
                     style="--bs-focus-ring-x: 10px; --bs-focus-ring-y: 10px; --bs-focus-ring-blur: 4px">
-                    Entre em contato
+                    Solicitar orçamento ->
                 </a>
             </div>
         </section>
 
-        <section id="projetos" class="d-flex row justify-content-center m-5">
-            <div class="container-fluid my-5 d-flex justify-content-center ">
-                <h2 class="title fs-2">Conheça alguns de meus Projetos</h2>
+        <section id="projetos" class="d-flex row justify-content-center m-5 p-5 ">
+            <div id="title" class="container rounded d-flex justify-content-center">
+                <h2 class="title display-2">NOSSO PORTIFÓLIO</h2>
             </div>
-            <div class="w-60 d-flex justify-content-center">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+
+            <div id="subtitle" class="container rounded m-1 d-flex justify-content-center">
+                <h2 class="subtitle display-4">Confira abaixo alguns dos nossos projetos</h2>
+            </div>
+
+            <div class="row">
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/calmaria.png" class="card-img w-100" alt="Projeto CalmariaSpa">
+                    <div class="card-img">
+                        <h5 class="card-text">Calmaria Spa</h5>
                     </div>
-                    <div class="carousel-inner w-70">
-                        <div class="carousel-item active" data-bs-interval="5000">
-                            <img src="./assets/Pomodoro.png" class="d-block w-70" alt="Imagem do projeto Pomodoro">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="title strong bg-lilas  rounded-5 w-70 px-4 d-inline-flex ">Projeto
-                                    Pomodoro</h5>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="5000">
-                            <img src="./assets/alurabooks.png" class="d-block w-70" alt="Imagem do projeto alurabooks">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="title strong bg-lilas rounded-5 w-70 px-4 d-inline-flex ">Projeto
-                                    Alura Books </h5>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="5000">
-                            <img src="./assets/calmaria.png" class="d-block w-70" alt="Imagem do projeto Calmaria Spa">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="title strong  bg-lilas rounded-5 w-70 px-4 d-inline-flex ">Projeto
-                                    Calmaria Spa</h5>
-                                <p></p>
-                            </div>
-                        </div>
+                </div>
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/culturama.png" class="card-img w-100" alt="Projeto Culturama">
+                    <div class="card-img">
+                        <h5 class="card-text">Projeto Culturama</h5>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/Pomodoro.png" class="card-img w-100" alt="Projeto Pomodoro">
+                    <div class="card-img">
+                        <h5 class="card-text">Projeto Pomodoro</h5>
+                    </div>
+                </div>
+                <div
+                    class="btn col m-2 d-flex flex-column-reverse justify-content-center align-items-center text-center border rounded-lg">
+                    <img src="./assets/vidflow.png" class="card-img w-100" alt="Projeto Vidflow">
+                    <div class="card-img">
+                        <h5 class="card-text">Projeto Vidflow</h5>
+                    </div>
                 </div>
             </div>
 
@@ -173,7 +162,7 @@
 
         <section id="sobreMim" class="d-flex row  justify-content-center m-5 p-5">
 
-            <h2 class="card-title m-5 d-flex justify-content-center align-items-center m-3">Sobre mim</h2>
+
             <div id="conteudo"
                 class="d-flex">
                 <div class="col-md-6 col-sm-12 w-50 d-flex flex-column justify-content-center align-self-center text-center align-items-center">
@@ -217,8 +206,8 @@
             </div>
             <div
                 class="col-md-6 col-sm-12 p-md-4 w-50 d-flex justify-content-center align-items-center align-self-center text-center">
-                <img class="img-fluid object-fit-md-contain w-50 rounded-pill shadow-lg mx-5"
-                    src="./assets/avatar-Elaine.png"
+                <img class="img-fluid object-fit-md-contain w-50 mx-5"
+                    src="./assets/avatar-Elaine.png" id="avatar-Elaine"
                     alt="Imagem de Elaine Bastos">
             </div>
             </div>
@@ -227,6 +216,7 @@
 
     </main>
 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
