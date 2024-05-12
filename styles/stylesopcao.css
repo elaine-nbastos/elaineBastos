@@ -58,7 +58,7 @@ body {
 }
 
 #linha-habilidades {
-    position: relative;
+position: relative;
 height: 5rem;
 overflow: hidden;
 }
@@ -76,6 +76,32 @@ opacity: 0.5;
     position: relative;
     z-index: 1;
     color: var(--cor-fonte-primaria);
+}
+
+.accordion-button:not(.collapsing){
+    --bs-accordion-bg:var(--cor-quinternaria);
+    --bs-accordion-border-color: var(--cor-primaria);
+}
+
+.accordion-button:not(.collapsed){
+
+    --bs-accordion-active-color: var(--cor-primaria);
+    --bs-accordion-active-bg: var(--cor-secundaria);
+    --bs-accordion-active-color: var(--cor-primaria);
+}
+
+#avatar-Elaine{
+    position:relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px;
+    }
 }
 
 

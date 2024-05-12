@@ -11,14 +11,14 @@ function toggleSelection(button) {
 
 window.sr= ScrollReveal({reset:true});
 
-sr.reveal('#projetos', {duration: 1000});
+sr.reveal('#projetos', {duration: 1500});
 
 sr.reveal('#habilidades', {
-    rotate:{x:0, y:80, z:0},
-    duration: 2000
+    rotate:{x:10, y:10, z:0},
+    duration: 1500
 });
 
 sr.reveal('#sobreMim', {
     rotate:{x:20, y:100, z:0},
-    duration: 2000
+    duration: 1500
 });
