@@ -337,7 +337,9 @@ opacity: 0.3;
         transition: .3s;
     }
 
-   
+    #linha-habilidades {
+        height: 8rem;
+        }
    
    
 }
