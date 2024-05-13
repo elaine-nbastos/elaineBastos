@@ -17,29 +17,34 @@
 
 <body data-bs-theme="light">
     <header class="fixed-top p-2">
-        <nav class="navbar">
-            <div class="container-fluid dropdown mx-5 px-5">
-                <button class="navbar-toggler" type="button" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <span class="navbar-toggler-icon">
-                        <ul class="dropdown-menu bg-secundario">
-                            <li><a href="#projetos" class="dropdown-item">Projetos</a></li>
-                            <li><a class="dropdown-item" href="#habilidades" >Habilidades</a></li>
-                            <li><a class="dropdown-item" href="#sobreMim" >Sobre mim</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Minhas redes</a></li>
-                        </ul>
+        <nav class="navbar navbar-expand-lg navbar-light d-flex row-reverse">
+            <div class="form-check form-switch" data-bs-toggle="tab">
+                <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                <label class="form-check-label" for="modo-noturno">
+                    <span class="position-relative">
+                        <i class="bi bi-moon"></i>
                     </span>
-                </button>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
-                    <label class="form-check-label" for="modo-noturno">
-                        <span class="position-relative">
-                            <i class="bi bi-moon"></i>
-                        </span>
-                    </label>
+                </label>
+            </div><!--modo noturno-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-fluid mx-5 px-5">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#projetos">Projetos</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#sobreMim">Sobre Mim</a>
+                      </li>
+
+                    </ul>
                 </div>
             </div>
         </nav><!--navbar-->
